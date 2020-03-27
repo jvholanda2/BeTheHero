@@ -12,7 +12,7 @@ module.exports = {
         return response.json(ongs);// podendo enviar o arquivo direto
     },
 
-    async create(request, reponse){
+    async create(request, response){
         const { name, email, whatsapp, city, uf } = request.body;
 
         //para criar o id interno

@@ -1,17 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import ReactDOM from 'react-dom';//integração do react com a dom/ arvore de elementos
+import App from './App';//importando o arquivo app.js dentro de uma variavel app
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//ReactDOmM renderizando(colocando em tela) o app. (geralmente o componente react tem a letra mauscula), pondo isso dentro da div com o id root
+ReactDOM.render(<App/>, document.getElementById('root'));
